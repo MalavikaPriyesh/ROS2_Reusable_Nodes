@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>network_fusion</name>
+  <version>0.1.0</version>
+  <description>Truly reusable network fusion node: register any number of links with priority-based failover.</description>
+  <maintainer email="flying_robot@todo.todo">Flying Robot Project</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

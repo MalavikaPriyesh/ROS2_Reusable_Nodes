@@ -1,0 +1,31 @@
+health_monitor_node:
+  ros__parameters:
+    check_period_ms: 100
+    status_publish_period_ms: 1000
+   
+    monitor_ids: ["camera", "lidar", "imu"]
+
+    # --- Camera Node ---
+    camera.node_name: "camera_node"
+    camera.topic_name: "/camera/image_raw"
+    camera.kind: "data"
+    camera.reliability: "best_effort"
+    camera.timeout_ms: 500
+
+    # --- LiDAR Node ---
+    lidar.node_name: "lidar_node"
+    lidar.topic_name: "/scan"
+    lidar.kind: "data"
+    lidar.reliability: "reliable"
+    lidar.deadline_ms: 100
+    lidar.liveliness_ms: 0
+    lidar.timeout_ms: 500
+
+    # --- IMU Node ---
+    imu.node_name: "imu_node"
+    imu.topic_name: "/imu/data"
+    imu.kind: "heartbeat"
+    imu.reliability: "reliable"
+    imu.deadline_ms: 20
+    imu.liveliness_ms: 100
+    imu.timeout_ms: 250

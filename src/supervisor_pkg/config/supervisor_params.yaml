@@ -1,0 +1,15 @@
+supervisor_node:
+  ros__parameters:
+    safety_status_topic: "/safety/status"
+    health_status_topic: "/health/status"
+    supervisor_status_topic: "/supervisor/status"
+    management_state_topic: "/management/state"
+    heartbeat_topic: "/supervisor/heartbeat"
+    evaluation_period_ms: 100
+    safety_status_timeout_ms: 500
+    health_status_timeout_ms: 1500
+    management_state_timeout_ms: 1500
+    required_health_topics: ["nav", "imu"]
+    heartbeat_period_ms: 500
+    heartbeat_deadline_ms: 700
+    heartbeat_liveliness_ms: 1500

@@ -1,0 +1,11 @@
+management_node:
+  ros__parameters:
+    supervisor_status_topic: "/supervisor/status"
+    supervisor_status_timeout_ms: 1000
+    module_ids: ["lidar", "navigation"]
+    
+    lidar.critical: true
+    lidar.topics: ["/scan", "/lidar/nearest_obstacle"]
+    
+    navigation.critical: true
+    navigation.topics: ["/vehicle/velocity"]
