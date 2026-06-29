@@ -20,9 +20,6 @@ The node sits between the serial modem hardware and the high-level system contro
 2. **AT Modem Monitor Node (Grey):** Periodically sends AT commands (or generates mock data), parses responses, and publishes standardised status messages.
 3. **System Status (Green):** Outputs unified `/network/at_lte/*` topics used by supervisors, dashboards, and safety controllers downstream.
 
-### Why This Node Exists
-
-The professor noted that future flying robot hardware will use **integrated LTE/5G modems** that do not have a web interface like the Huawei USB stick. These modems only support AT command communication over serial. This node provides the foundation for that transition.
 
 > **Current Status:** Mock mode is fully functional. Real serial AT communication is a placeholder ready for implementation when hardware is available.
 
