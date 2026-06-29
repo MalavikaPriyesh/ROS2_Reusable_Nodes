@@ -84,7 +84,7 @@ ros2_ws/
 ├── build/
 ├── install/
 └── log/
-
+```
 ---
 
 ## 🔄 Design Philosophy
